@@ -1,0 +1,45 @@
+<xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: none">
+  <category name="LED 4 SỐ" colour="#33a5aa" icon="h-square">
+    <block type="uno_tm1637_create"></block>
+    <block type="uno_tm1637_show_number">
+      <value name="value">
+        <shadow type="math_number">
+          <field name="NUM">1234</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="uno_tm1637_show_text">
+      <value name="value">
+        <shadow type="text">
+          <field name="TEXT">abcd</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="uno_tm1637_scroll">
+      <value name="value">
+        <shadow type="text">
+          <field name="TEXT">1234</field>
+        </shadow>
+      </value>
+      <value name="speed">
+        <shadow type="math_number">
+          <field name="NUM">250</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="uno_tm1637_temperature">
+      <value name="value">
+        <shadow type="math_number">
+          <field name="NUM">32</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="uno_tm1637_brightness">
+      <value name="value">
+        <shadow type="math_number">
+          <field name="NUM">7</field>
+        </shadow>
+      </value>
+    </block>
+  </category>
+</xml>
