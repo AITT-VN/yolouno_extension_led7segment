@@ -1,6 +1,6 @@
 {
-    "name": "Led 7 đoạn",
-    "description": "Mục mở rộng của Yolo UNO cho module led 7 đoạn",
+    "name": "LED 7 đoạn",
+    "description": "Thư viện cho module led 7 đoạn 4 kí số",
     "libs": [
         "tm1637.py"
     ],

@@ -1,64 +1,5 @@
 const TM1637ColorBlock = "#33a5aa";
 
-var digitalPins = [
-  [
-    "D3",
-    "D3"
-  ],
-  [
-    "D4",
-    "D4"
-  ],
-  [
-    "D5",
-    "D5"
-  ],
-  [
-    "D6",
-    "D6"
-  ],
-  [
-    "D7",
-    "D7"
-  ],
-  [
-    "D8",
-    "D8"
-  ],
-  [
-    "D9",
-    "D9"
-  ],
-  [
-    "D10",
-    "D10"
-  ],
-  [
-    "D11",
-    "D11"
-  ],
-  [
-    "D12",
-    "D12"
-  ],
-  [
-    "D13",
-    "D13"
-  ],
-  [
-    "D0",
-    "D0"
-  ],
-  [
-    "D1",
-    "D1"
-  ],
-  [
-    "D2",
-    "D2"
-  ]
-];
-
 Blockly.Blocks["uno_tm1637_create"] = {
   /**
    * Block for waiting.
@@ -67,7 +8,7 @@ Blockly.Blocks["uno_tm1637_create"] = {
   init: function () {
     this.jsonInit({
       type: "uno_tm1637_create",
-      message0: "khởi tạo module led 7 đoạn chân CLK %1 chân DATA %2",
+      message0: "khởi tạo module led 4 số CLK %1 DATA %2",
       args0: [
         {
           type: "field_dropdown",
