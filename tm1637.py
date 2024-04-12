@@ -138,15 +138,15 @@ class TM1637(object):
     def number(self, num):
         """Display a numeric value -999 through 9999, right aligned."""
         # limit to range -999 to 9999
-        num = max(-999, min(num, 9999))
+        num = int(max(-999, min(num, 9999)))
         string = '{0: >4d}'.format(num)
         self.write(self.encode_string(string))
 
     def numbers(self, num1, num2, colon=True):
         """Display two numeric values -9 through 99, with leading zeros
         and separated by a colon."""
-        num1 = max(-9, min(num1, 99))
-        num2 = max(-9, min(num2, 99))
+        num1 = int(max(-9, min(num1, 99)))
+        num2 = int(max(-9, min(num2, 99)))
         segments = self.encode_string('{0:0>2d}{1:0>2d}'.format(num1, num2))
         if colon:
             segments[1] |= 0x80 # colon on
